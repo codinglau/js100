@@ -1,0 +1,50 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.container {
+    position: relative;
+    border: 1rem solid #f2f2f2;
+    border-radius: 10px;
+}
+
+.container .prev {
+    position: absolute;
+    top: 50%;
+    left: calc(-1rem - 48px);
+    transform: translateY(-50%);
+}
+
+.container .prev .material-icons.md-48 {
+    font-size: 48px;
+}
+
+.container .next {
+    position: absolute;
+    top: 50%;
+    right: calc(-1rem - 48px);
+    transform: translateY(-50%);
+}
+
+.container .next .material-icons.md-48 {
+    font-size: 48px;
+}
+
+.container img.active {
+    display: block;
+}
+
+.container img.inactive {
+    display: none;
+}
